@@ -36,12 +36,13 @@ class TitleFragment : Fragment() {
                               savedInstanceState: Bundle?): View? {
         val binding = DataBindingUtil.inflate<FragmentTitleBinding>(inflater,
                 R.layout.fragment_title,container,false)
-        binding.playButton.setOnClickListener{}
-        return binding.root
         //The complete onClickListener with Navigation
         binding.playButton.setOnClickListener { view : View ->
-            view.findNavController().navigate(R.id.action_titleFragment_to_gameFragment)
+            view.findNavController().navigate(R.id.action_titleFragment_to_gameFragment2)
         }
+
+        return binding.root
+
     }
 
     companion object {

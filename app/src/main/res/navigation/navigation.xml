@@ -3,15 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
-    app:startDestination="@id/titleFragment2">
-
+    app:startDestination="@id/titleFragment">
     <fragment
-        android:id="@+id/titleFragment2"
+        android:id="@+id/titleFragment"
         android:name="com.example.android.navigation.TitleFragment"
-        android:label="fragment_title2"
-        tools:layout="@layout/fragment_title2" >
+        android:label="fragment_title"
+        tools:layout="@layout/fragment_title" >
         <action
-            android:id="@+id/action_titleFragment_to_gameFragment"
+            android:id="@+id/action_titleFragment_to_gameFragment2"
             app:destination="@id/gameFragment" />
     </fragment>
     <!-- The game fragment within the navigation XML, complete with tools:layout. -->
